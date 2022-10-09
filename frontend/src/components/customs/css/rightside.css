@@ -1,0 +1,81 @@
+.col-9 {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
+
+.col-8 {
+   
+    width:calc(100% / 1);
+}
+
+.col-4{
+    width:calc(100% / 2);
+}
+
+
+
+.image-name {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+
+.active-icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(28, 212, 28);
+    right: 0px;
+    bottom: 0pc;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icons {
+    display: flex;
+}
+
+
+
+label {
+    display: flex;
+    margin-bottom: 0px;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
+
+#dot {
+    display: none;
+}
+
+#dot:checked~.row .col-4 {
+    display: none;
+}
+
+#dot:checked~.row .col-8 {
+    width: 100%;
+}
+
+#dot:checked~.row .col-8 .message-show .my-message .my-text {
+    width: 500px;
+}
+
+#dot:checked~.row .col-8 .message-show .fd-message .fd-text {
+    width: 500px;
+}
